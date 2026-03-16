@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdb9df;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg3)" />
+
+  <!-- Background decorative blobs -->
+  <circle cx="700" cy="450" r="200" fill="#ff6634" opacity="0.1"/>
+  <circle cx="80" cy="60" r="140" fill="#ff6634" opacity="0.08"/>
+
+  <!-- Flow arrows / pipeline -->
+  <!-- Step 1 box -->
+  <rect x="60" y="185" width="140" height="130" rx="20" fill="white" opacity="0.95" filter="drop-shadow(0 6px 20px rgba(0,0,0,0.07))"/>
+  <rect x="60" y="185" width="140" height="40" rx="20" fill="#ff6634" opacity="0.9"/>
+  <rect x="60" y="205" width="140" height="20" fill="#ff6634" opacity="0.9"/>
+  <text x="130" y="211" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold" letter-spacing="1">TRIGGER</text>
+  <circle cx="100" cy="260" r="18" fill="#ffceeb"/>
+  <path d="M91 260 l6-7 10 13" stroke="#ff6634" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="126" y="250" width="58" height="8" rx="4" fill="#e8e0d8"/>
+  <rect x="126" y="264" width="44" height="8" rx="4" fill="#e8e0d8" opacity="0.6"/>
+  <rect x="80" y="288" width="100" height="16" rx="8" fill="#ff6634" opacity="0.12"/>
+  <text x="130" y="300" font-family="Arial, sans-serif" font-size="9" fill="#ff6634" text-anchor="middle" font-weight="bold">Gmail / Form</text>
+
+  <!-- Arrow 1 -->
+  <g opacity="0.7">
+    <line x1="204" y1="250" x2="264" y2="250" stroke="#ff6634" stroke-width="3" stroke-dasharray="6,4"/>
+    <polygon points="264,244 276,250 264,256" fill="#ff6634"/>
+  </g>
+
+  <!-- Step 2 box -->
+  <rect x="280" y="185" width="140" height="130" rx="20" fill="white" opacity="0.95" filter="drop-shadow(0 6px 20px rgba(0,0,0,0.07))"/>
+  <rect x="280" y="185" width="140" height="40" rx="20" fill="#ff6634" opacity="0.9"/>
+  <rect x="280" y="205" width="140" height="20" fill="#ff6634" opacity="0.9"/>
+  <text x="350" y="211" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold" letter-spacing="1">ACCIÓN</text>
+  <!-- Gear icon -->
+  <g transform="translate(350,258)" fill="none" stroke="#ff6634" stroke-width="2.5">
+    <circle cx="0" cy="0" r="10"/>
+    <circle cx="0" cy="0" r="5" fill="#ffceeb" stroke="none"/>
+    <line x1="0" y1="-14" x2="0" y2="-10"/>
+    <line x1="0" y1="10" x2="0" y2="14"/>
+    <line x1="-14" y1="0" x2="-10" y2="0"/>
+    <line x1="10" y1="0" x2="14" y2="0"/>
+    <line x1="-10" y1="-10" x2="-7" y2="-7"/>
+    <line x1="7" y1="7" x2="10" y2="10"/>
+    <line x1="10" y1="-10" x2="7" y2="-7"/>
+    <line x1="-7" y1="7" x2="-10" y2="10"/>
+  </g>
+  <rect x="300" y="288" width="100" height="16" rx="8" fill="#ff6634" opacity="0.12"/>
+  <text x="350" y="300" font-family="Arial, sans-serif" font-size="9" fill="#ff6634" text-anchor="middle" font-weight="bold">Procesar datos</text>
+
+  <!-- Arrow 2 -->
+  <g opacity="0.7">
+    <line x1="424" y1="250" x2="484" y2="250" stroke="#ff6634" stroke-width="3" stroke-dasharray="6,4"/>
+    <polygon points="484,244 496,250 484,256" fill="#ff6634"/>
+  </g>
+
+  <!-- Step 3 box -->
+  <rect x="500" y="185" width="140" height="130" rx="20" fill="white" opacity="0.95" filter="drop-shadow(0 6px 20px rgba(0,0,0,0.07))"/>
+  <rect x="500" y="185" width="140" height="40" rx="20" fill="#ff6634" opacity="0.9"/>
+  <rect x="500" y="205" width="140" height="20" fill="#ff6634" opacity="0.9"/>
+  <text x="570" y="211" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold" letter-spacing="1">RESULTADO</text>
+  <!-- Check circle -->
+  <circle cx="570" cy="258" r="18" fill="#ffceeb"/>
+  <path d="M559 258 l7 7 12-13" stroke="#ff6634" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="520" y="288" width="100" height="16" rx="8" fill="#ff6634" opacity="0.12"/>
+  <text x="570" y="300" font-family="Arial, sans-serif" font-size="9" fill="#ff6634" text-anchor="middle" font-weight="bold">Notificación ✓</text>
+
+  <!-- Top floating badge: tiempo ahorrado -->
+  <rect x="290" y="60" width="160" height="52" rx="14" fill="#ff6634" opacity="0.95" filter="drop-shadow(0 4px 16px rgba(255,102,52,0.25))"/>
+  <text x="370" y="82" font-family="Arial, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="bold">⚡ Auto</text>
+  <text x="370" y="101" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.85" text-anchor="middle">sin intervención manual</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="13" fill="#c89ab5" text-anchor="middle" letter-spacing="6">AUTOMATIZACIONES</text>
+</svg>

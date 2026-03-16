@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1e38;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg4)" />
+
+  <!-- Background glow blobs -->
+  <circle cx="640" cy="100" r="200" fill="#ff6634" opacity="0.07"/>
+  <circle cx="140" cy="420" r="180" fill="#ffceeb" opacity="0.06"/>
+
+  <!-- Subtle dot grid -->
+  <g fill="white" opacity="0.04">
+    <circle cx="100" cy="80" r="2"/><circle cx="200" cy="80" r="2"/><circle cx="300" cy="80" r="2"/><circle cx="400" cy="80" r="2"/><circle cx="500" cy="80" r="2"/><circle cx="600" cy="80" r="2"/><circle cx="700" cy="80" r="2"/>
+    <circle cx="100" cy="160" r="2"/><circle cx="200" cy="160" r="2"/><circle cx="300" cy="160" r="2"/><circle cx="400" cy="160" r="2"/><circle cx="500" cy="160" r="2"/><circle cx="600" cy="160" r="2"/><circle cx="700" cy="160" r="2"/>
+    <circle cx="100" cy="240" r="2"/><circle cx="200" cy="240" r="2"/><circle cx="300" cy="240" r="2"/><circle cx="400" cy="240" r="2"/><circle cx="500" cy="240" r="2"/><circle cx="600" cy="240" r="2"/><circle cx="700" cy="240" r="2"/>
+    <circle cx="100" cy="320" r="2"/><circle cx="200" cy="320" r="2"/><circle cx="300" cy="320" r="2"/><circle cx="400" cy="320" r="2"/><circle cx="500" cy="320" r="2"/><circle cx="600" cy="320" r="2"/><circle cx="700" cy="320" r="2"/>
+    <circle cx="100" cy="400" r="2"/><circle cx="200" cy="400" r="2"/><circle cx="300" cy="400" r="2"/><circle cx="400" cy="400" r="2"/><circle cx="500" cy="400" r="2"/><circle cx="600" cy="400" r="2"/><circle cx="700" cy="400" r="2"/>
+  </g>
+
+  <!-- Phone frame -->
+  <rect x="290" y="50" width="180" height="360" rx="28" fill="url(#phoneGrad)" stroke="#ff6634" stroke-width="2" opacity="0.9" filter="drop-shadow(0 12px 40px rgba(255,102,52,0.2))"/>
+  <!-- Phone notch -->
+  <rect x="340" y="58" width="80" height="14" rx="7" fill="#0d0d1a"/>
+  <!-- Phone screen -->
+  <rect x="300" y="82" width="160" height="310" rx="4" fill="#0d0d20"/>
+
+  <!-- Profile header in phone -->
+  <rect x="300" y="82" width="160" height="80" rx="4" fill="#ff6634" opacity="0.9"/>
+  <circle cx="380" cy="122" r="22" fill="white" opacity="0.95"/>
+  <!-- Profile avatar -->
+  <circle cx="380" cy="116" r="10" fill="#ffceeb"/>
+  <ellipse cx="380" cy="136" rx="15" ry="10" fill="#ffceeb"/>
+
+  <!-- Instagram-like content -->
+  <rect x="308" y="172" width="68" height="68" rx="6" fill="#2a2a4a"/>
+  <rect x="308" y="172" width="68" height="68" rx="6" fill="#ff6634" opacity="0.3"/>
+  <rect x="384" y="172" width="68" height="68" rx="6" fill="#2a2a4a"/>
+  <rect x="384" y="172" width="68" height="68" rx="6" fill="#ffceeb" opacity="0.3"/>
+
+  <!-- Post content lines -->
+  <rect x="308" y="248" width="144" height="8" rx="4" fill="#3a3a5a"/>
+  <rect x="308" y="262" width="110" height="8" rx="4" fill="#3a3a5a" opacity="0.6"/>
+
+  <!-- Like / comment bar -->
+  <g transform="translate(308, 282)">
+    <circle cx="8" cy="8" r="7" fill="#ff6634" opacity="0.8"/>
+    <text x="20" y="12" font-family="Arial" font-size="9" fill="white" opacity="0.6">1.2k</text>
+    <circle cx="62" cy="8" r="7" fill="#3a3a5a"/>
+    <text x="74" y="12" font-family="Arial" font-size="9" fill="white" opacity="0.6">48</text>
+  </g>
+
+  <rect x="308" y="304" width="144" height="8" rx="4" fill="#3a3a5a" opacity="0.4"/>
+  <rect x="308" y="318" width="90" height="8" rx="4" fill="#3a3a5a" opacity="0.4"/>
+
+  <!-- Floating stat cards -->
+  <!-- Followers -->
+  <rect x="90" y="150" width="130" height="64" rx="14" fill="white" opacity="0.07" stroke="white" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="116" y="178" font-family="Arial, sans-serif" font-size="22" fill="#ff6634" font-weight="bold">+240</text>
+  <text x="116" y="198" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.5">seguidores nuevos</text>
+
+  <!-- Reach -->
+  <rect x="90" y="240" width="130" height="64" rx="14" fill="white" opacity="0.07" stroke="white" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="116" y="268" font-family="Arial, sans-serif" font-size="22" fill="#ffceeb" font-weight="bold">8.4k</text>
+  <text x="116" y="288" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.5">alcance semanal</text>
+
+  <!-- Engagement -->
+  <rect x="540" y="150" width="130" height="64" rx="14" fill="white" opacity="0.07" stroke="white" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="566" y="178" font-family="Arial, sans-serif" font-size="22" fill="#ff6634" font-weight="bold">12%</text>
+  <text x="566" y="198" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.5">engagement rate</text>
+
+  <!-- Sales -->
+  <rect x="540" y="240" width="130" height="64" rx="14" fill="white" opacity="0.07" stroke="white" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="566" y="268" font-family="Arial, sans-serif" font-size="22" fill="#ffceeb" font-weight="bold">+60%</text>
+  <text x="566" y="288" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.5">más ventas</text>
+
+  <!-- Sparkles -->
+  <g fill="#ff6634" opacity="0.8">
+    <polygon points="86,100 90,112 102,116 90,120 86,132 82,120 70,116 82,112" transform="scale(0.55)"/>
+    <polygon points="86,100 90,112 102,116 90,120 86,132 82,120 70,116 82,112" transform="scale(0.35) translate(1700,700)"/>
+  </g>
+  <g fill="#ffceeb" opacity="0.7">
+    <polygon points="86,100 90,112 102,116 90,120 86,132 82,120 70,116 82,112" transform="scale(0.4) translate(1200,10)"/>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.2" text-anchor="middle" letter-spacing="6">PRESENCIA DIGITAL</text>
+</svg>

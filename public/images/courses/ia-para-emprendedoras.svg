@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6634;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffceeb;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ff6634;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg1)" />
+
+  <!-- Subtle grid -->
+  <g opacity="0.08" stroke="white" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Glow blob top right -->
+  <ellipse cx="680" cy="80" rx="220" ry="180" fill="url(#glow)" />
+  <!-- Glow blob bottom left -->
+  <ellipse cx="120" cy="420" rx="180" ry="140" fill="url(#glow)" />
+
+  <!-- Neural network nodes and connections -->
+  <!-- Layer 1 -->
+  <circle cx="180" cy="160" r="14" fill="white" opacity="0.9"/>
+  <circle cx="180" cy="250" r="14" fill="white" opacity="0.9"/>
+  <circle cx="180" cy="340" r="14" fill="white" opacity="0.9"/>
+
+  <!-- Layer 2 -->
+  <circle cx="340" cy="130" r="14" fill="white" opacity="0.9"/>
+  <circle cx="340" cy="220" r="14" fill="white" opacity="0.9"/>
+  <circle cx="340" cy="310" r="14" fill="white" opacity="0.9"/>
+  <circle cx="340" cy="370" r="14" fill="white" opacity="0.9"/>
+
+  <!-- Layer 3 (center, highlighted) -->
+  <circle cx="500" cy="180" r="20" fill="white" opacity="1"/>
+  <circle cx="500" cy="290" r="20" fill="white" opacity="1"/>
+  <circle cx="500" cy="180" r="30" fill="white" opacity="0.15"/>
+  <circle cx="500" cy="290" r="30" fill="white" opacity="0.15"/>
+
+  <!-- Layer 4 -->
+  <circle cx="640" cy="200" r="14" fill="white" opacity="0.9"/>
+  <circle cx="640" cy="310" r="14" fill="white" opacity="0.9"/>
+
+  <!-- Connections layer 1 → 2 -->
+  <g stroke="white" stroke-width="1.5" opacity="0.3">
+    <line x1="194" y1="160" x2="326" y2="130"/>
+    <line x1="194" y1="160" x2="326" y2="220"/>
+    <line x1="194" y1="160" x2="326" y2="310"/>
+    <line x1="194" y1="250" x2="326" y2="130"/>
+    <line x1="194" y1="250" x2="326" y2="220"/>
+    <line x1="194" y1="250" x2="326" y2="310"/>
+    <line x1="194" y1="250" x2="326" y2="370"/>
+    <line x1="194" y1="340" x2="326" y2="220"/>
+    <line x1="194" y1="340" x2="326" y2="310"/>
+    <line x1="194" y1="340" x2="326" y2="370"/>
+  </g>
+
+  <!-- Connections layer 2 → 3 (highlighted) -->
+  <g stroke="white" stroke-width="2" opacity="0.5">
+    <line x1="354" y1="130" x2="480" y2="180"/>
+    <line x1="354" y1="220" x2="480" y2="180"/>
+    <line x1="354" y1="220" x2="480" y2="290"/>
+    <line x1="354" y1="310" x2="480" y2="180"/>
+    <line x1="354" y1="310" x2="480" y2="290"/>
+    <line x1="354" y1="370" x2="480" y2="290"/>
+  </g>
+
+  <!-- Connections layer 3 → 4 -->
+  <g stroke="white" stroke-width="2" opacity="0.5">
+    <line x1="520" y1="180" x2="626" y2="200"/>
+    <line x1="520" y1="290" x2="626" y2="200"/>
+    <line x1="520" y1="290" x2="626" y2="310"/>
+    <line x1="520" y1="180" x2="626" y2="310"/>
+  </g>
+
+  <!-- IA label -->
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.5" text-anchor="middle" letter-spacing="6">INTELIGENCIA ARTIFICIAL</text>
+
+  <!-- Sparkles -->
+  <g fill="white" opacity="0.7">
+    <polygon points="730,140 735,155 750,160 735,165 730,180 725,165 710,160 725,155" transform="scale(0.7) translate(330,10)"/>
+    <polygon points="730,140 735,155 750,160 735,165 730,180 725,165 710,160 725,155" transform="scale(0.4) translate(200,550)"/>
+  </g>
+</svg>
