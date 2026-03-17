@@ -4,7 +4,7 @@ import AnimateIn from "@/components/ui/AnimateIn";
 
 const pillars = [
   { icon: "🤖", text: "Inteligencia Artificial" },
-  { icon: "⚡", text: "Automatizaciones" },
+
   { icon: "📱", text: "Presencia Digital" },
   { icon: "🚀", text: "Productividad" },
 ];
@@ -26,7 +26,6 @@ export default function CoursesSection() {
           </AnimateIn>
           <AnimateIn delay={0.1} direction="right">
             <p className="section-subtitle mt-0">
-              Somos conscientes de que el mundo tech puede sentirse ajeno.
               Nuestros cursos están pensados desde cero para emprendedores: sin tecnicismos, 100% prácticos, con resultados
               reales para tu negocio.
             </p>

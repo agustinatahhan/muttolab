@@ -9,7 +9,7 @@ const services = [
     ),
     title: "Sitios Web",
     description:
-      "Diseñamos y desarrollamos sitios web modernos, rápidos y optimizados para emprendedoras, marcas personales y empresas que quieren causar una primera impresión impecable.",
+      "Diseñamos y desarrollamos sitios web modernos, rápidos y optimizados para emprendedores, marcas personales y empresas que quieren causar una primera impresión impecable.",
     tags: ["Landing pages", "Portafolios", "Corporativos"],
   },
   {
@@ -32,7 +32,7 @@ const services = [
     title: "Automatizaciones",
     description:
       "Conectamos tus apps y automatizamos procesos repetitivos —emails, leads, reportes, notificaciones— para que vos y tu equipo puedan enfocarse en lo que realmente mueve tu negocio.",
-    tags: ["Make / Zapier", "CRM", "Email marketing"],
+    tags: ["CRM", "Email marketing"],
   },
   {
     icon: (
@@ -43,12 +43,12 @@ const services = [
     title: "Integraciones con IA",
     description:
       "Implementamos soluciones de inteligencia artificial en tu empresa o emprendimiento: asistentes virtuales, generación de contenido automática, análisis de datos y mucho más.",
-    tags: ["Chatbots IA", "Generación de contenido", "Análisis"],
+    tags: ["Chatbots IA", "Análisis"],
   },
 ];
 
 const audiences = [
-  { label: "Emprendedoras", icon: "💡" },
+  { label: "Emprendedores", icon: "💡" },
   { label: "Marcas personales", icon: "✨" },
   { label: "Pequeñas empresas", icon: "🏢" },
   { label: "Profesionales independientes", icon: "👩‍💻" },
@@ -56,7 +56,7 @@ const audiences = [
 
 export default function ServicesSection() {
   return (
-    <section id="servicios" className="bg-white">
+    <section id="servicios" className="bg-brand-bg">
       <div className="section-container">
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end mb-16">
@@ -70,11 +70,11 @@ export default function ServicesSection() {
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.1} direction="right">
-            <p className="section-subtitle mt-0">
-              Trabajamos con emprendedoras, marcas personales, empresas y
+            {/* <p className="section-subtitle mt-0">
+              Trabajamos con emprendedores, marcas personales, empresas y
               profesionales que necesitan llevar su presencia digital al
               siguiente nivel con tecnología a medida.
-            </p>
+            </p> */}
             {/* Audience pills */}
             <div className="flex flex-wrap gap-2 mt-6">
               {audiences.map((a) => (
@@ -93,7 +93,7 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
             <AnimateIn key={service.title} delay={i * 0.1}>
-              <div className="group bg-brand-bg rounded-2xl p-8 h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-primary cursor-default">
+              <div className="group bg-white rounded-2xl p-8 h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-primary cursor-default">
                 {/* Icon */}
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-secondary/60 text-primary mb-6 transition-all duration-300 group-hover:bg-white/20 group-hover:text-white">
                   {service.icon}
@@ -114,7 +114,7 @@ export default function ServicesSection() {
                   {service.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-2.5 py-1 rounded-full bg-white/60 text-gray-500 group-hover:bg-white/20 group-hover:text-white/70 transition-colors duration-300"
+                      className="text-xs px-2.5 py-1 rounded-full border border-gray-400/30 bg-white/60 text-gray-500 group-hover:bg-white/20 group-hover:text-white/70 group-hover:border-none transition-colors duration-300"
                     >
                       {tag}
                     </span>

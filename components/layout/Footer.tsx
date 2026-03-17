@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const navLinks = [
   { label: "Cursos", href: "#cursos" },
-  { label: "Sobre nosotras", href: "#sobre-nosotras" },
   { label: "Servicios", href: "#servicios" },
+  { label: "Nosotras", href: "/nosotras" },
   { label: "Contacto", href: "#contacto" },
 ];
 

@@ -10,18 +10,22 @@ const tools = [
   "Presencia online",
 ];
 
-export default function AboutSection() {
+interface AboutSectionProps {
+  compact?: boolean;
+}
+
+export default function AboutSection({ compact = false }: AboutSectionProps) {
   return (
-    <section id="sobre-nosotras" className="bg-brand-bg">
-      <div className="section-container">
+    <section className="bg-brand-bg">
+      <div className={compact ? "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-20" : "section-container"}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           {/* Image */}
           <AnimateIn direction="left" className="order-2 lg:order-1">
             <div className="relative">
               <div className="relative aspect-4/5 max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/us/us.JPG"
-                  alt="Muttolab - Madre e hija"
+                  src="/us/uss.png"
+                  alt="Muttolab — el equipo"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -47,8 +51,8 @@ export default function AboutSection() {
                 Quiénes somos
               </span>
               <h2 className="section-title mt-3 mb-6">
-                Madre e hija,{" "}
-                <span style={{ color: "#ff6634" }}>apasionadas</span> por la
+              
+                <span style={{ color: "#ff6634" }}>Apasionadas</span> por la
                 tecnología
               </h2>
             </AnimateIn>
@@ -57,15 +61,15 @@ export default function AboutSection() {
               <p className="text-gray-600 text-base leading-relaxed mb-4">
                 Somos madre e hija trabajando juntas en tecnología, y queremos
                 ayudar a{" "}
-                <strong className="text-black">mujeres emprendedoras</strong> a
-                aprovechar las herramientas digitales para hacer crecer sus
-                proyectos.
+                <strong className="text-black">emprendedores, profesionales y cualquier persona</strong>{" "}
+                a aprovechar las herramientas digitales para hacer crecer sus
+                proyectos y simplificar su día a día.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-8">
                 Creemos que la tecnología no debería ser una barrera, sino una
-                herramienta accesible para todas. Por eso enseñamos de forma
+                herramienta accesible para todos. Por eso enseñamos de forma
                 práctica, sin tecnicismos, con el foco en resultados reales
-                para tu negocio.
+                para tu trabajo o negocio.
               </p>
             </AnimateIn>
 

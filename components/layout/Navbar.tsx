@@ -3,17 +3,20 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Cursos", href: "#cursos" },
-  { label: "Sobre nosotras", href: "#sobre-nosotras" },
   { label: "Servicios", href: "#servicios" },
+  { label: "Nosotras", href: "/nosotras" },
   { label: "Contacto", href: "#contacto" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -22,11 +25,14 @@ export default function Navbar() {
   }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("#")) {
-      e.preventDefault();
+    if (!href.startsWith("#")) return;
+    e.preventDefault();
+    setMenuOpen(false);
+    if (isHome) {
       const el = document.querySelector(href);
       if (el) el.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false);
+    } else {
+      window.location.href = `/${href}`;
     }
   };
 
@@ -54,17 +60,28 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <ul className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("#") ? (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ) : (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
 
           {/* Desktop CTA */}
@@ -107,17 +124,29 @@ export default function Navbar() {
           }`}
         >
           <ul className="flex flex-col gap-4 pt-2">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="block text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200 py-1"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("#") ? (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="block text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200 py-1"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ) : (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200 py-1"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              )
+            )}
             <li>
               <a
                 href="#contacto"

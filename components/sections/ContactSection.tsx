@@ -33,7 +33,7 @@ export default function ContactSection() {
     "w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-black placeholder-gray-400 outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/10";
 
   return (
-    <section id="contacto" className="bg-brand-bg">
+    <section id="contacto" className="bg-secondary/20">
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-start">
           {/* Left: copy */}
@@ -56,7 +56,7 @@ export default function ContactSection() {
               {[
                 {
                   label: "Email",
-                  value: "hola@muttolab.com",
+                  value: "muttolab@gmail.com",
                   icon: (
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />

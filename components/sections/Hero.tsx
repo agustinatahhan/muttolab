@@ -63,7 +63,7 @@ export default function Hero() {
             className="section-subtitle text-xl md:text-2xl max-w-2xl mb-10"
             {...fadeUp(0.2)}
           >
-            Ayudamos a usar la tecnología e inteligencia artificial para
+            Te ayudamos a usar la tecnología e inteligencia artificial para
             potenciar sus proyectos.
           </motion.p>
 

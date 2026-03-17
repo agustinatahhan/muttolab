@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { League_Spartan, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import ContactSection from "@/components/sections/ContactSection";
 
 const leagueSpartan = League_Spartan({
   variable: "--font-league-spartan",
@@ -40,6 +41,7 @@ export default function RootLayout({
         {" "}
         <Navbar />
         {children}
+        <ContactSection />
       </body>
     </html>
   );
