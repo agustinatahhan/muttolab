@@ -19,6 +19,6 @@ export async function sendContactEmail(data: EmailFormData): Promise<void> {
       from_email: data.email,
       message: data.message,
     },
-    publicKey
+    { publicKey }
   );
 }

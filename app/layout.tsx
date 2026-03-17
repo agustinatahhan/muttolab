@@ -17,15 +17,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Muttolab | Tecnología para mujeres emprendedoras",
+  title: "Muttolab | Tecnología e IA para emprendedores",
   description:
-    "Cursos y servicios de tecnología e inteligencia artificial para mujeres emprendedoras. Aprende a potenciar tu negocio con herramientas digitales.",
+    "Talleres presenciales de inteligencia artificial, NotebookLM y Pomelli para emprendedores, profesionales y cualquier persona que quiera aprovechar la tecnología.",
   keywords: [
     "tecnología",
-    "emprendedoras",
-    "cursos IA",
+    "emprendedores",
+    "talleres IA",
     "inteligencia artificial",
-    "mujeres",
+    "NotebookLM",
+    "Pomelli",
     "negocios",
   ],
 };
@@ -38,7 +39,6 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${leagueSpartan.variable} ${inter.variable}`}>
       <body className="antialiased">
-        {" "}
         <Navbar />
         {children}
         <ContactSection />

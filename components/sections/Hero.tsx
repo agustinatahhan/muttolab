@@ -10,19 +10,13 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.7, delay, ease: EASE },
 });
 
-const stats = [
-  { value: "100+", label: "Emprendedoras" },
-  { value: "4", label: "Cursos disponibles" },
-  { value: "4", label: "Servicios" },
-];
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-brand-bg flex items-center overflow-hidden">
       {/* Decorative blobs */}
       <motion.div
         aria-hidden
-        className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-20 pointer-events-none"
+        className="absolute -top-32 -right-32 w-125 h-125 rounded-full opacity-20 pointer-events-none"
         style={{ background: "radial-gradient(circle, #ff6634 0%, transparent 70%)" }}
         initial={{ scale: 0.6, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.2 }}
@@ -30,7 +24,7 @@ export default function Hero() {
       />
       <motion.div
         aria-hidden
-        className="absolute bottom-0 -left-20 w-[350px] h-[350px] rounded-full opacity-30 pointer-events-none"
+        className="absolute bottom-0 -left-20 w-87.5 h-87.5 rounded-full opacity-30 pointer-events-none"
         style={{ background: "radial-gradient(circle, #ffceeb 0%, transparent 70%)" }}
         initial={{ scale: 0.6, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.3 }}
@@ -64,7 +58,7 @@ export default function Hero() {
             {...fadeUp(0.2)}
           >
             Te ayudamos a usar la tecnología e inteligencia artificial para
-            potenciar sus proyectos.
+            potenciar tus proyectos.
           </motion.p>
 
           {/* CTAs */}

@@ -1,8 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCourseBySlug, courses, formatPrice } from "@/data/courses";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -33,9 +31,7 @@ export default async function CourseDetailPage({ params }: Props) {
     : null;
 
   return (
-    <>
-      <Navbar />
-      <main className="bg-brand-bg min-h-screen pt-20">
+    <main className="bg-brand-bg min-h-screen pt-20">
 
         {/* ── Intro ── */}
         <div className="bg-white border-b border-gray-100">
@@ -251,7 +247,7 @@ export default async function CourseDetailPage({ params }: Props) {
                 </div>
               </div>
 
-              <Link href="/" className="btn-primary w-full justify-center text-sm pt-4">
+              <Link href="/#contacto" className="btn-primary w-full justify-center text-sm pt-4">
                 Consultar inscripción
               </Link>
 
@@ -259,8 +255,6 @@ export default async function CourseDetailPage({ params }: Props) {
             </div>
           </aside>
         </div>
-      </main>
-   
-    </>
+    </main>
   );
 }

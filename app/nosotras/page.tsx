@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import AboutSection from "@/components/sections/AboutSection";
-import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
