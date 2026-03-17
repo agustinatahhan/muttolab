@@ -64,6 +64,44 @@ Arrancamos juntos con una introducción práctica donde mostramos ejemplos reale
       "Querés ahorrar tiempo en tu negocio o trabajo",
       "Preferís aprender haciendo, no solo escuchando",
     ],
+    useCases: [
+      {
+        icon: "💬",
+        title: "Chatear con IA como si fuera tu asistente personal",
+        description:
+          "Aprendés a hacerle preguntas precisas a ChatGPT, Claude o Gemini para que te ayude a redactar emails, preparar reuniones, responder clientes o resolver problemas del día a día.",
+      },
+      {
+        icon: "📊",
+        title: "Analizar planillas, Excel o datos de tu negocio",
+        description:
+          "Subís una planilla de ventas o gastos y la IA te genera tablas comparativas, gráficos, resúmenes y conclusiones en segundos — sin saber una fórmula.",
+      },
+      {
+        icon: "✍️",
+        title: "Generar contenido para redes y comunicaciones",
+        description:
+          "Creás posts para Instagram, descripciones de productos, newsletters o mensajes de WhatsApp en el tono de tu marca, en segundos y sin bloqueo creativo.",
+      },
+      {
+        icon: "🔍",
+        title: "Investigar temas o competencia en minutos",
+        description:
+          "Le pedís a la IA que investigue un mercado, resuma tendencias o compare competidores — y te devuelve un informe listo para usar, no 40 tabs abiertos.",
+      },
+      {
+        icon: "📝",
+        title: "Redactar presupuestos, propuestas y contratos",
+        description:
+          "Describís tu servicio y la IA arma el borrador de una propuesta comercial, presupuesto o contrato básico que después solo ajustás a tu medida.",
+      },
+      {
+        icon: "🎯",
+        title: "Planificar proyectos y organizar tareas",
+        description:
+          "Le contás tu proyecto a la IA y te devuelve un plan de acción con pasos, fechas y prioridades — como tener un project manager propio.",
+      },
+    ],
     requirements: "Solo necesitás traer tu notebook",
     groupSize: "Grupos pequeños para atención personalizada",
   },
@@ -233,7 +271,7 @@ Este programa está pensado para cualquier persona que quiera dominar las herram
     format: "Presencial",
     durationHours: "3 módulos",
     level: "Inicial",
-    price: 200000,
+    price: 190000,
     originalPrice: 220000,
     isBundle: true,
     bundleModules: [
@@ -267,7 +305,7 @@ Este programa está pensado para cualquier persona que quiera dominar las herram
       "Preferís aprender en grupo, con acompañamiento real",
       "Querés aplicarlo a tu trabajo, tu negocio o tu vida cotidiana",
     ],
-    requirements: "Solo necesitás traer tu notebook o celular",
+    requirements: "Solo necesitás traer tu notebook",
     groupSize: "Grupos reducidos de hasta 8 personas",
   },
 ];
